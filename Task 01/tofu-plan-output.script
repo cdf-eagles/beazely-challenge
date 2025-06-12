@@ -1,0 +1,1239 @@
+Script started on Thu Jun 12 16:11:58 2025
+Restored session: Thu Jun 12 16:11:51 CDT 2025
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                      ]7;file://redacted_hostname/Users/redacted_username/Documents/src/beazely-challenge/Task%2001[0m[27m[24m[J[30m[48;5;41m~/Documents/src/beazely-challenge/Task 01[49m[39m                                                                                                                                                                                           [32mbeazely-challenge:λ|main[00m_[34m[00m[31m[00m[33mS[00m
+[97mredacted_username@redacted_hostname[39m [97m[40m>[39m[49m[K[220C[30m[48;5;179m16:11[49m[39m[225D[?2004htofu plan -out=tfplan[21D[32mt[32mo[32mf[32mu[39m[17C[?2004l
+[0m[1mdata.aws_instances.target_web: Reading...[0m[0m
+[0m[1mdata.aws_instances.target_web: Read complete after 0s [id=us-east-2][0m
+
+OpenTofu used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+
+OpenTofu will perform the following actions:
+
+[1m  # aws_db_instance.default[0m will be created
+[0m  [32m+[0m[0m resource "aws_db_instance" "default" {
+      [32m+[0m[0m address                               = (known after apply)
+      [32m+[0m[0m allocated_storage                     = 10
+      [32m+[0m[0m apply_immediately                     = false
+      [32m+[0m[0m arn                                   = (known after apply)
+      [32m+[0m[0m auto_minor_version_upgrade            = true
+      [32m+[0m[0m availability_zone                     = (known after apply)
+      [32m+[0m[0m backup_retention_period               = (known after apply)
+      [32m+[0m[0m backup_target                         = (known after apply)
+      [32m+[0m[0m backup_window                         = (known after apply)
+      [32m+[0m[0m ca_cert_identifier                    = (known after apply)
+      [32m+[0m[0m character_set_name                    = (known after apply)
+      [32m+[0m[0m copy_tags_to_snapshot                 = false
+      [32m+[0m[0m db_name                               = "task_one_db"
+      [32m+[0m[0m db_subnet_group_name                  = (known after apply)
+      [32m+[0m[0m delete_automated_backups              = true
+      [32m+[0m[0m deletion_protection                   = false
+      [32m+[0m[0m domain_fqdn                           = (known after apply)
+      [32m+[0m[0m endpoint                              = (known after apply)
+      [32m+[0m[0m engine                                = "mysql"
+      [32m+[0m[0m engine_version                        = "8.4"
+      [32m+[0m[0m engine_version_actual                 = (known after apply)
+      [32m+[0m[0m hosted_zone_id                        = (known after apply)
+      [32m+[0m[0m id                                    = (known after apply)
+      [32m+[0m[0m identifier                            = (known after apply)
+      [32m+[0m[0m identifier_prefix                     = (known after apply)
+      [32m+[0m[0m instance_class                        = "db.t3.micro"
+      [32m+[0m[0m iops                                  = (known after apply)
+      [32m+[0m[0m kms_key_id                            = (known after apply)
+      [32m+[0m[0m latest_restorable_time                = (known after apply)
+      [32m+[0m[0m license_model                         = (known after apply)
+      [32m+[0m[0m listener_endpoint                     = (known after apply)
+      [32m+[0m[0m maintenance_window                    = "mon:00:00-mon:03:00"
+      [32m+[0m[0m master_user_secret                    = (known after apply)
+      [32m+[0m[0m master_user_secret_kms_key_id         = (known after apply)
+      [32m+[0m[0m monitoring_interval                   = 0
+      [32m+[0m[0m monitoring_role_arn                   = (known after apply)
+      [32m+[0m[0m multi_az                              = true
+      [32m+[0m[0m nchar_character_set_name              = (known after apply)
+      [32m+[0m[0m network_type                          = (known after apply)
+      [32m+[0m[0m option_group_name                     = (known after apply)
+      [32m+[0m[0m parameter_group_name                  = (known after apply)
+      [32m+[0m[0m password                              = (sensitive value)
+      [32m+[0m[0m performance_insights_enabled          = false
+      [32m+[0m[0m performance_insights_kms_key_id       = (known after apply)
+      [32m+[0m[0m performance_insights_retention_period = (known after apply)
+      [32m+[0m[0m port                                  = (known after apply)
+      [32m+[0m[0m publicly_accessible                   = false
+      [32m+[0m[0m replica_mode                          = (known after apply)
+      [32m+[0m[0m replicas                              = (known after apply)
+      [32m+[0m[0m resource_id                           = (known after apply)
+      [32m+[0m[0m skip_final_snapshot                   = true
+      [32m+[0m[0m snapshot_identifier                   = (known after apply)
+      [32m+[0m[0m status                                = (known after apply)
+      [32m+[0m[0m storage_throughput                    = (known after apply)
+      [32m+[0m[0m storage_type                          = (known after apply)
+      [32m+[0m[0m tags                                  = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Default RDS Database"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                              = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Default RDS Database"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m timezone                              = (known after apply)
+      [32m+[0m[0m username                              = "testuser"
+      [32m+[0m[0m vpc_security_group_ids                = (known after apply)
+    }
+
+[1m  # aws_db_subnet_group.default[0m will be created
+[0m  [32m+[0m[0m resource "aws_db_subnet_group" "default" {
+      [32m+[0m[0m arn                     = (known after apply)
+      [32m+[0m[0m description             = "Managed by Terraform"
+      [32m+[0m[0m id                      = (known after apply)
+      [32m+[0m[0m name                    = "primary"
+      [32m+[0m[0m name_prefix             = (known after apply)
+      [32m+[0m[0m subnet_ids              = [
+          [32m+[0m[0m "10.1.7.0/24",
+          [32m+[0m[0m "10.1.8.0/24",
+          [32m+[0m[0m "10.1.9.0/24",
+        ]
+      [32m+[0m[0m supported_network_types = (known after apply)
+      [32m+[0m[0m tags                    = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 DB Subnet Group"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 DB Subnet Group"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                  = (known after apply)
+    }
+
+[1m  # aws_instance.webserver["0"][0m will be created
+[0m  [32m+[0m[0m resource "aws_instance" "webserver" {
+      [32m+[0m[0m ami                                  = "ami-0a39ac0843e40d0d7"
+      [32m+[0m[0m arn                                  = (known after apply)
+      [32m+[0m[0m associate_public_ip_address          = (known after apply)
+      [32m+[0m[0m availability_zone                    = (known after apply)
+      [32m+[0m[0m cpu_core_count                       = (known after apply)
+      [32m+[0m[0m cpu_threads_per_core                 = (known after apply)
+      [32m+[0m[0m disable_api_stop                     = (known after apply)
+      [32m+[0m[0m disable_api_termination              = (known after apply)
+      [32m+[0m[0m ebs_optimized                        = (known after apply)
+      [32m+[0m[0m get_password_data                    = false
+      [32m+[0m[0m host_id                              = (known after apply)
+      [32m+[0m[0m host_resource_group_arn              = (known after apply)
+      [32m+[0m[0m iam_instance_profile                 = (known after apply)
+      [32m+[0m[0m id                                   = (known after apply)
+      [32m+[0m[0m instance_initiated_shutdown_behavior = (known after apply)
+      [32m+[0m[0m instance_lifecycle                   = (known after apply)
+      [32m+[0m[0m instance_state                       = (known after apply)
+      [32m+[0m[0m instance_type                        = "t3a.medium"
+      [32m+[0m[0m ipv6_address_count                   = (known after apply)
+      [32m+[0m[0m ipv6_addresses                       = (known after apply)
+      [32m+[0m[0m key_name                             = "cfernando@redacted_hostname_id_ed25519"
+      [32m+[0m[0m monitoring                           = (known after apply)
+      [32m+[0m[0m outpost_arn                          = (known after apply)
+      [32m+[0m[0m password_data                        = (known after apply)
+      [32m+[0m[0m placement_group                      = (known after apply)
+      [32m+[0m[0m placement_partition_number           = (known after apply)
+      [32m+[0m[0m primary_network_interface_id         = (known after apply)
+      [32m+[0m[0m private_dns                          = (known after apply)
+      [32m+[0m[0m private_ip                           = (known after apply)
+      [32m+[0m[0m public_dns                           = (known after apply)
+      [32m+[0m[0m public_ip                            = (known after apply)
+      [32m+[0m[0m secondary_private_ips                = (known after apply)
+      [32m+[0m[0m security_groups                      = (known after apply)
+      [32m+[0m[0m source_dest_check                    = true
+      [32m+[0m[0m spot_instance_request_id             = (known after apply)
+      [32m+[0m[0m subnet_id                            = (known after apply)
+      [32m+[0m[0m tags                                 = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "webserver01"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                             = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "webserver01"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tenancy                              = (known after apply)
+      [32m+[0m[0m user_data                            = "3213160d078d7fbd69df57f999c464c650f5b64a"
+      [32m+[0m[0m user_data_base64                     = (known after apply)
+      [32m+[0m[0m user_data_replace_on_change          = false
+      [32m+[0m[0m vpc_security_group_ids               = (known after apply)
+
+      [32m+[0m[0m capacity_reservation_specification (known after apply)
+
+      [32m+[0m[0m cpu_options (known after apply)
+
+      [32m+[0m[0m ebs_block_device (known after apply)
+
+      [32m+[0m[0m enclave_options (known after apply)
+
+      [32m+[0m[0m ephemeral_block_device (known after apply)
+
+      [32m+[0m[0m instance_market_options (known after apply)
+
+      [32m+[0m[0m maintenance_options (known after apply)
+
+      [32m+[0m[0m metadata_options (known after apply)
+
+      [32m+[0m[0m network_interface (known after apply)
+
+      [32m+[0m[0m private_dns_name_options (known after apply)
+
+      [32m+[0m[0m root_block_device (known after apply)
+    }
+
+[1m  # aws_instance.webserver["1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_instance" "webserver" {
+      [32m+[0m[0m ami                                  = "ami-0a39ac0843e40d0d7"
+      [32m+[0m[0m arn                                  = (known after apply)
+      [32m+[0m[0m associate_public_ip_address          = (known after apply)
+      [32m+[0m[0m availability_zone                    = (known after apply)
+      [32m+[0m[0m cpu_core_count                       = (known after apply)
+      [32m+[0m[0m cpu_threads_per_core                 = (known after apply)
+      [32m+[0m[0m disable_api_stop                     = (known after apply)
+      [32m+[0m[0m disable_api_termination              = (known after apply)
+      [32m+[0m[0m ebs_optimized                        = (known after apply)
+      [32m+[0m[0m get_password_data                    = false
+      [32m+[0m[0m host_id                              = (known after apply)
+      [32m+[0m[0m host_resource_group_arn              = (known after apply)
+      [32m+[0m[0m iam_instance_profile                 = (known after apply)
+      [32m+[0m[0m id                                   = (known after apply)
+      [32m+[0m[0m instance_initiated_shutdown_behavior = (known after apply)
+      [32m+[0m[0m instance_lifecycle                   = (known after apply)
+      [32m+[0m[0m instance_state                       = (known after apply)
+      [32m+[0m[0m instance_type                        = "t3a.medium"
+      [32m+[0m[0m ipv6_address_count                   = (known after apply)
+      [32m+[0m[0m ipv6_addresses                       = (known after apply)
+      [32m+[0m[0m key_name                             = "cfernando@redacted_hostname_id_ed25519"
+      [32m+[0m[0m monitoring                           = (known after apply)
+      [32m+[0m[0m outpost_arn                          = (known after apply)
+      [32m+[0m[0m password_data                        = (known after apply)
+      [32m+[0m[0m placement_group                      = (known after apply)
+      [32m+[0m[0m placement_partition_number           = (known after apply)
+      [32m+[0m[0m primary_network_interface_id         = (known after apply)
+      [32m+[0m[0m private_dns                          = (known after apply)
+      [32m+[0m[0m private_ip                           = (known after apply)
+      [32m+[0m[0m public_dns                           = (known after apply)
+      [32m+[0m[0m public_ip                            = (known after apply)
+      [32m+[0m[0m secondary_private_ips                = (known after apply)
+      [32m+[0m[0m security_groups                      = (known after apply)
+      [32m+[0m[0m source_dest_check                    = true
+      [32m+[0m[0m spot_instance_request_id             = (known after apply)
+      [32m+[0m[0m subnet_id                            = (known after apply)
+      [32m+[0m[0m tags                                 = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "webserver02"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                             = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "webserver02"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tenancy                              = (known after apply)
+      [32m+[0m[0m user_data                            = "3213160d078d7fbd69df57f999c464c650f5b64a"
+      [32m+[0m[0m user_data_base64                     = (known after apply)
+      [32m+[0m[0m user_data_replace_on_change          = false
+      [32m+[0m[0m vpc_security_group_ids               = (known after apply)
+
+      [32m+[0m[0m capacity_reservation_specification (known after apply)
+
+      [32m+[0m[0m cpu_options (known after apply)
+
+      [32m+[0m[0m ebs_block_device (known after apply)
+
+      [32m+[0m[0m enclave_options (known after apply)
+
+      [32m+[0m[0m ephemeral_block_device (known after apply)
+
+      [32m+[0m[0m instance_market_options (known after apply)
+
+      [32m+[0m[0m maintenance_options (known after apply)
+
+      [32m+[0m[0m metadata_options (known after apply)
+
+      [32m+[0m[0m network_interface (known after apply)
+
+      [32m+[0m[0m private_dns_name_options (known after apply)
+
+      [32m+[0m[0m root_block_device (known after apply)
+    }
+
+[1m  # aws_instance.webserver["2"][0m will be created
+[0m  [32m+[0m[0m resource "aws_instance" "webserver" {
+      [32m+[0m[0m ami                                  = "ami-0a39ac0843e40d0d7"
+      [32m+[0m[0m arn                                  = (known after apply)
+      [32m+[0m[0m associate_public_ip_address          = (known after apply)
+      [32m+[0m[0m availability_zone                    = (known after apply)
+      [32m+[0m[0m cpu_core_count                       = (known after apply)
+      [32m+[0m[0m cpu_threads_per_core                 = (known after apply)
+      [32m+[0m[0m disable_api_stop                     = (known after apply)
+      [32m+[0m[0m disable_api_termination              = (known after apply)
+      [32m+[0m[0m ebs_optimized                        = (known after apply)
+      [32m+[0m[0m get_password_data                    = false
+      [32m+[0m[0m host_id                              = (known after apply)
+      [32m+[0m[0m host_resource_group_arn              = (known after apply)
+      [32m+[0m[0m iam_instance_profile                 = (known after apply)
+      [32m+[0m[0m id                                   = (known after apply)
+      [32m+[0m[0m instance_initiated_shutdown_behavior = (known after apply)
+      [32m+[0m[0m instance_lifecycle                   = (known after apply)
+      [32m+[0m[0m instance_state                       = (known after apply)
+      [32m+[0m[0m instance_type                        = "t3a.medium"
+      [32m+[0m[0m ipv6_address_count                   = (known after apply)
+      [32m+[0m[0m ipv6_addresses                       = (known after apply)
+      [32m+[0m[0m key_name                             = "cfernando@redacted_hostname_id_ed25519"
+      [32m+[0m[0m monitoring                           = (known after apply)
+      [32m+[0m[0m outpost_arn                          = (known after apply)
+      [32m+[0m[0m password_data                        = (known after apply)
+      [32m+[0m[0m placement_group                      = (known after apply)
+      [32m+[0m[0m placement_partition_number           = (known after apply)
+      [32m+[0m[0m primary_network_interface_id         = (known after apply)
+      [32m+[0m[0m private_dns                          = (known after apply)
+      [32m+[0m[0m private_ip                           = (known after apply)
+      [32m+[0m[0m public_dns                           = (known after apply)
+      [32m+[0m[0m public_ip                            = (known after apply)
+      [32m+[0m[0m secondary_private_ips                = (known after apply)
+      [32m+[0m[0m security_groups                      = (known after apply)
+      [32m+[0m[0m source_dest_check                    = true
+      [32m+[0m[0m spot_instance_request_id             = (known after apply)
+      [32m+[0m[0m subnet_id                            = (known after apply)
+      [32m+[0m[0m tags                                 = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "webserver03"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                             = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "webserver03"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tenancy                              = (known after apply)
+      [32m+[0m[0m user_data                            = "3213160d078d7fbd69df57f999c464c650f5b64a"
+      [32m+[0m[0m user_data_base64                     = (known after apply)
+      [32m+[0m[0m user_data_replace_on_change          = false
+      [32m+[0m[0m vpc_security_group_ids               = (known after apply)
+
+      [32m+[0m[0m capacity_reservation_specification (known after apply)
+
+      [32m+[0m[0m cpu_options (known after apply)
+
+      [32m+[0m[0m ebs_block_device (known after apply)
+
+      [32m+[0m[0m enclave_options (known after apply)
+
+      [32m+[0m[0m ephemeral_block_device (known after apply)
+
+      [32m+[0m[0m instance_market_options (known after apply)
+
+      [32m+[0m[0m maintenance_options (known after apply)
+
+      [32m+[0m[0m metadata_options (known after apply)
+
+      [32m+[0m[0m network_interface (known after apply)
+
+      [32m+[0m[0m private_dns_name_options (known after apply)
+
+      [32m+[0m[0m root_block_device (known after apply)
+    }
+
+[1m  # aws_internet_gateway.internet_gateway[0m will be created
+[0m  [32m+[0m[0m resource "aws_internet_gateway" "internet_gateway" {
+      [32m+[0m[0m arn      = (known after apply)
+      [32m+[0m[0m id       = (known after apply)
+      [32m+[0m[0m owner_id = (known after apply)
+      [32m+[0m[0m tags     = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Internet Gateway"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Internet Gateway"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id   = (known after apply)
+    }
+
+[1m  # aws_lb.external-alb[0m will be created
+[0m  [32m+[0m[0m resource "aws_lb" "external-alb" {
+      [32m+[0m[0m arn                                                          = (known after apply)
+      [32m+[0m[0m arn_suffix                                                   = (known after apply)
+      [32m+[0m[0m desync_mitigation_mode                                       = "defensive"
+      [32m+[0m[0m dns_name                                                     = (known after apply)
+      [32m+[0m[0m drop_invalid_header_fields                                   = false
+      [32m+[0m[0m enable_deletion_protection                                   = false
+      [32m+[0m[0m enable_http2                                                 = true
+      [32m+[0m[0m enable_tls_version_and_cipher_suite_headers                  = false
+      [32m+[0m[0m enable_waf_fail_open                                         = false
+      [32m+[0m[0m enable_xff_client_port                                       = false
+      [32m+[0m[0m enforce_security_group_inbound_rules_on_private_link_traffic = (known after apply)
+      [32m+[0m[0m id                                                           = (known after apply)
+      [32m+[0m[0m idle_timeout                                                 = 60
+      [32m+[0m[0m internal                                                     = false
+      [32m+[0m[0m ip_address_type                                              = (known after apply)
+      [32m+[0m[0m load_balancer_type                                           = "application"
+      [32m+[0m[0m name                                                         = "default-alb"
+      [32m+[0m[0m name_prefix                                                  = (known after apply)
+      [32m+[0m[0m preserve_host_header                                         = false
+      [32m+[0m[0m security_groups                                              = (known after apply)
+      [32m+[0m[0m subnets                                                      = [
+          [32m+[0m[0m "10.1.1.0/24",
+          [32m+[0m[0m "10.1.2.0/24",
+          [32m+[0m[0m "10.1.3.0/24",
+        ]
+      [32m+[0m[0m tags                                                         = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Default Application Load Balancer (External)"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                                                     = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Default Application Load Balancer (External)"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                                                       = (known after apply)
+      [32m+[0m[0m xff_header_processing_mode                                   = "append"
+      [32m+[0m[0m zone_id                                                      = (known after apply)
+
+      [32m+[0m[0m subnet_mapping (known after apply)
+    }
+
+[1m  # aws_lb_target_group.target-elb["TCP:443"][0m will be created
+[0m  [32m+[0m[0m resource "aws_lb_target_group" "target-elb" {
+      [32m+[0m[0m arn                                = (known after apply)
+      [32m+[0m[0m arn_suffix                         = (known after apply)
+      [32m+[0m[0m connection_termination             = (known after apply)
+      [32m+[0m[0m deregistration_delay               = "300"
+      [32m+[0m[0m id                                 = (known after apply)
+      [32m+[0m[0m ip_address_type                    = (known after apply)
+      [32m+[0m[0m lambda_multi_value_headers_enabled = false
+      [32m+[0m[0m load_balancer_arns                 = (known after apply)
+      [32m+[0m[0m load_balancing_algorithm_type      = (known after apply)
+      [32m+[0m[0m load_balancing_anomaly_mitigation  = (known after apply)
+      [32m+[0m[0m load_balancing_cross_zone_enabled  = (known after apply)
+      [32m+[0m[0m name                               = "lb-443"
+      [32m+[0m[0m name_prefix                        = (known after apply)
+      [32m+[0m[0m port                               = 443
+      [32m+[0m[0m preserve_client_ip                 = (known after apply)
+      [32m+[0m[0m protocol                           = "TCP"
+      [32m+[0m[0m protocol_version                   = (known after apply)
+      [32m+[0m[0m proxy_protocol_v2                  = false
+      [32m+[0m[0m slow_start                         = 0
+      [32m+[0m[0m tags_all                           = (known after apply)
+      [32m+[0m[0m target_type                        = "instance"
+      [32m+[0m[0m vpc_id                             = (known after apply)
+
+      [32m+[0m[0m health_check {
+          [32m+[0m[0m enabled             = true
+          [32m+[0m[0m healthy_threshold   = 3
+          [32m+[0m[0m interval            = 60
+          [32m+[0m[0m matcher             = (known after apply)
+          [32m+[0m[0m path                = (known after apply)
+          [32m+[0m[0m port                = "443"
+          [32m+[0m[0m protocol            = "TCP"
+          [32m+[0m[0m timeout             = (known after apply)
+          [32m+[0m[0m unhealthy_threshold = 5
+        }
+
+      [32m+[0m[0m stickiness (known after apply)
+
+      [32m+[0m[0m target_failover (known after apply)
+
+      [32m+[0m[0m target_health_state (known after apply)
+    }
+
+[1m  # aws_lb_target_group.target-elb["TCP:80"][0m will be created
+[0m  [32m+[0m[0m resource "aws_lb_target_group" "target-elb" {
+      [32m+[0m[0m arn                                = (known after apply)
+      [32m+[0m[0m arn_suffix                         = (known after apply)
+      [32m+[0m[0m connection_termination             = (known after apply)
+      [32m+[0m[0m deregistration_delay               = "300"
+      [32m+[0m[0m id                                 = (known after apply)
+      [32m+[0m[0m ip_address_type                    = (known after apply)
+      [32m+[0m[0m lambda_multi_value_headers_enabled = false
+      [32m+[0m[0m load_balancer_arns                 = (known after apply)
+      [32m+[0m[0m load_balancing_algorithm_type      = (known after apply)
+      [32m+[0m[0m load_balancing_anomaly_mitigation  = (known after apply)
+      [32m+[0m[0m load_balancing_cross_zone_enabled  = (known after apply)
+      [32m+[0m[0m name                               = "lb-80"
+      [32m+[0m[0m name_prefix                        = (known after apply)
+      [32m+[0m[0m port                               = 80
+      [32m+[0m[0m preserve_client_ip                 = (known after apply)
+      [32m+[0m[0m protocol                           = "TCP"
+      [32m+[0m[0m protocol_version                   = (known after apply)
+      [32m+[0m[0m proxy_protocol_v2                  = false
+      [32m+[0m[0m slow_start                         = 0
+      [32m+[0m[0m tags_all                           = (known after apply)
+      [32m+[0m[0m target_type                        = "instance"
+      [32m+[0m[0m vpc_id                             = (known after apply)
+
+      [32m+[0m[0m health_check {
+          [32m+[0m[0m enabled             = true
+          [32m+[0m[0m healthy_threshold   = 3
+          [32m+[0m[0m interval            = 60
+          [32m+[0m[0m matcher             = (known after apply)
+          [32m+[0m[0m path                = (known after apply)
+          [32m+[0m[0m port                = "80"
+          [32m+[0m[0m protocol            = "TCP"
+          [32m+[0m[0m timeout             = (known after apply)
+          [32m+[0m[0m unhealthy_threshold = 5
+        }
+
+      [32m+[0m[0m stickiness (known after apply)
+
+      [32m+[0m[0m target_failover (known after apply)
+
+      [32m+[0m[0m target_health_state (known after apply)
+    }
+
+[1m  # aws_route_table.web_route_table[0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "web_route_table" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m route            = [
+          [32m+[0m[0m {
+              [32m+[0m[0m carrier_gateway_id         = ""
+              [32m+[0m[0m cidr_block                 = "0.0.0.0/0"
+              [32m+[0m[0m core_network_arn           = ""
+              [32m+[0m[0m destination_prefix_list_id = ""
+              [32m+[0m[0m egress_only_gateway_id     = ""
+              [32m+[0m[0m gateway_id                 = (known after apply)
+              [32m+[0m[0m ipv6_cidr_block            = ""
+              [32m+[0m[0m local_gateway_id           = ""
+              [32m+[0m[0m nat_gateway_id             = ""
+              [32m+[0m[0m network_interface_id       = ""
+              [32m+[0m[0m transit_gateway_id         = ""
+              [32m+[0m[0m vpc_endpoint_id            = ""
+              [32m+[0m[0m vpc_peering_connection_id  = ""
+            },
+        ]
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Public Routing Table"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Public Routing Table"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id           = (known after apply)
+    }
+
+[1m  # aws_route_table_association.public_subnet_assoc[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "public_subnet_assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = (known after apply)
+    }
+
+[1m  # aws_route_table_association.public_subnet_assoc[1][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "public_subnet_assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = (known after apply)
+    }
+
+[1m  # aws_route_table_association.public_subnet_assoc[2][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "public_subnet_assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = (known after apply)
+    }
+
+[1m  # aws_security_group.default_db_sg[0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group" "default_db_sg" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m description            = "Beazley Task 1 Default Database Server Security Group"
+      [32m+[0m[0m egress                 = (known after apply)
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ingress                = (known after apply)
+      [32m+[0m[0m name                   = "default-db-sg"
+      [32m+[0m[0m name_prefix            = (known after apply)
+      [32m+[0m[0m owner_id               = (known after apply)
+      [32m+[0m[0m revoke_rules_on_delete = false
+      [32m+[0m[0m tags                   = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Default Database Server Security Group"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Default Database Server Security Group"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                 = (known after apply)
+    }
+
+[1m  # aws_security_group.default_instance_sg[0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group" "default_instance_sg" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m description            = "Beazley Task 1 Default Instance Security Group"
+      [32m+[0m[0m egress                 = (known after apply)
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ingress                = (known after apply)
+      [32m+[0m[0m name                   = "default-instance-sg"
+      [32m+[0m[0m name_prefix            = (known after apply)
+      [32m+[0m[0m owner_id               = (known after apply)
+      [32m+[0m[0m revoke_rules_on_delete = false
+      [32m+[0m[0m tags                   = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Default Instance Security Group"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Default Instance Security Group"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                 = (known after apply)
+    }
+
+[1m  # aws_security_group.default_vpc_sg[0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group" "default_vpc_sg" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m description            = "Beazley Task 1 Default VPC Security Group"
+      [32m+[0m[0m egress                 = (known after apply)
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ingress                = (known after apply)
+      [32m+[0m[0m name                   = "default-vpc-sg"
+      [32m+[0m[0m name_prefix            = (known after apply)
+      [32m+[0m[0m owner_id               = (known after apply)
+      [32m+[0m[0m revoke_rules_on_delete = false
+      [32m+[0m[0m tags                   = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Default VPC Security Group"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all               = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Default VPC Security Group"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                 = (known after apply)
+    }
+
+[1m  # aws_security_group_rule.allow_db_rules["all"][0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group_rule" "allow_db_rules" {
+      [32m+[0m[0m cidr_blocks              = [
+          [32m+[0m[0m "0.0.0.0/0",
+        ]
+      [32m+[0m[0m description              = "Database Server Egress Allow to All"
+      [32m+[0m[0m from_port                = 0
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m protocol                 = "-1"
+      [32m+[0m[0m security_group_id        = (known after apply)
+      [32m+[0m[0m security_group_rule_id   = (known after apply)
+      [32m+[0m[0m self                     = false
+      [32m+[0m[0m source_security_group_id = (known after apply)
+      [32m+[0m[0m to_port                  = 0
+      [32m+[0m[0m type                     = "egress"
+    }
+
+[1m  # aws_security_group_rule.allow_db_rules["icmp-public-access"][0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group_rule" "allow_db_rules" {
+      [32m+[0m[0m cidr_blocks              = [
+          [32m+[0m[0m "10.1.0.0/16",
+        ]
+      [32m+[0m[0m description              = "Database Server Ingress Allow ICMP ECHO from All"
+      [32m+[0m[0m from_port                = 8
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m protocol                 = "icmp"
+      [32m+[0m[0m security_group_id        = (known after apply)
+      [32m+[0m[0m security_group_rule_id   = (known after apply)
+      [32m+[0m[0m self                     = false
+      [32m+[0m[0m source_security_group_id = (known after apply)
+      [32m+[0m[0m to_port                  = 0
+      [32m+[0m[0m type                     = "ingress"
+    }
+
+[1m  # aws_security_group_rule.allow_db_rules["mysql-access"][0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group_rule" "allow_db_rules" {
+      [32m+[0m[0m cidr_blocks              = [
+          [32m+[0m[0m "10.1.0.0/16",
+        ]
+      [32m+[0m[0m description              = "Database Server Ingress Allow MySQL from VPC"
+      [32m+[0m[0m from_port                = 3306
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m protocol                 = "tcp"
+      [32m+[0m[0m security_group_id        = (known after apply)
+      [32m+[0m[0m security_group_rule_id   = (known after apply)
+      [32m+[0m[0m self                     = false
+      [32m+[0m[0m source_security_group_id = (known after apply)
+      [32m+[0m[0m to_port                  = 3306
+      [32m+[0m[0m type                     = "ingress"
+    }
+
+[1m  # aws_security_group_rule.allow_instance_rules["all"][0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group_rule" "allow_instance_rules" {
+      [32m+[0m[0m cidr_blocks              = [
+          [32m+[0m[0m "0.0.0.0/0",
+        ]
+      [32m+[0m[0m description              = "Instance Egress Allow to All"
+      [32m+[0m[0m from_port                = 0
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m protocol                 = "-1"
+      [32m+[0m[0m security_group_id        = (known after apply)
+      [32m+[0m[0m security_group_rule_id   = (known after apply)
+      [32m+[0m[0m self                     = false
+      [32m+[0m[0m source_security_group_id = (known after apply)
+      [32m+[0m[0m to_port                  = 0
+      [32m+[0m[0m type                     = "egress"
+    }
+
+[1m  # aws_security_group_rule.allow_instance_rules["http-access"][0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group_rule" "allow_instance_rules" {
+      [32m+[0m[0m cidr_blocks              = [
+          [32m+[0m[0m "0.0.0.0/0",
+        ]
+      [32m+[0m[0m description              = "Instance Ingress Allow HTTP from All"
+      [32m+[0m[0m from_port                = 80
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m protocol                 = "tcp"
+      [32m+[0m[0m security_group_id        = (known after apply)
+      [32m+[0m[0m security_group_rule_id   = (known after apply)
+      [32m+[0m[0m self                     = false
+      [32m+[0m[0m source_security_group_id = (known after apply)
+      [32m+[0m[0m to_port                  = 80
+      [32m+[0m[0m type                     = "ingress"
+    }
+
+[1m  # aws_security_group_rule.allow_instance_rules["https-access"][0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group_rule" "allow_instance_rules" {
+      [32m+[0m[0m cidr_blocks              = [
+          [32m+[0m[0m "0.0.0.0/0",
+        ]
+      [32m+[0m[0m description              = "Instance Ingress Allow HTTPS from All"
+      [32m+[0m[0m from_port                = 443
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m protocol                 = "tcp"
+      [32m+[0m[0m security_group_id        = (known after apply)
+      [32m+[0m[0m security_group_rule_id   = (known after apply)
+      [32m+[0m[0m self                     = false
+      [32m+[0m[0m source_security_group_id = (known after apply)
+      [32m+[0m[0m to_port                  = 443
+      [32m+[0m[0m type                     = "ingress"
+    }
+
+[1m  # aws_security_group_rule.allow_instance_rules["icmp-public-access"][0m will be created
+[0m  [32m+[0m[0m resource "aws_security_group_rule" "allow_instance_rules" {
+      [32m+[0m[0m cidr_blocks              = [
+          [32m+[0m[0m "0.0.0.0/0",
+        ]
+      [32m+[0m[0m description              = "Instance Ingress Allow ICMP ECHO from All"
+      [32m+[0m[0m from_port                = 8
+      [32m+[0m[0m id                       = (known after apply)
+      [32m+[0m[0m protocol                 = "icmp"
+      [32m+[0m[0m security_group_id        = (known after apply)
+      [32m+[0m[0m security_group_rule_id   = (known after apply)
+      [32m+[0m[0m self                     = false
+      [32m+[0m[0m source_security_group_id = (known after apply)
+      [32m+[0m[0m to_port                  = 0
+      [32m+[0m[0m type                     = "ingress"
+    }
+
+[1m  # aws_subnet.app_subnets[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "app_subnets" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "us-east-2a"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.1.4.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 App Subnet 1"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 App Subnet 1"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_subnet.app_subnets[1][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "app_subnets" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "us-east-2b"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.1.5.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 App Subnet 2"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 App Subnet 2"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_subnet.app_subnets[2][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "app_subnets" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "us-east-2c"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.1.6.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 App Subnet 3"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 App Subnet 3"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_subnet.db_subnets[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "db_subnets" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "us-east-2a"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.1.7.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 DB Subnet 1"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 DB Subnet 1"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_subnet.db_subnets[1][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "db_subnets" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "us-east-2b"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.1.8.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 DB Subnet 2"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 DB Subnet 2"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_subnet.db_subnets[2][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "db_subnets" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "us-east-2c"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.1.9.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 DB Subnet 3"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 DB Subnet 3"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_subnet.web_subnets[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "web_subnets" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "us-east-2a"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.1.1.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Web Subnet 1"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Web Subnet 1"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_subnet.web_subnets[1][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "web_subnets" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "us-east-2b"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.1.2.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Web Subnet 2"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Web Subnet 2"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_subnet.web_subnets[2][0m will be created
+[0m  [32m+[0m[0m resource "aws_subnet" "web_subnets" {
+      [32m+[0m[0m arn                                            = (known after apply)
+      [32m+[0m[0m assign_ipv6_address_on_creation                = false
+      [32m+[0m[0m availability_zone                              = "us-east-2c"
+      [32m+[0m[0m availability_zone_id                           = (known after apply)
+      [32m+[0m[0m cidr_block                                     = "10.1.3.0/24"
+      [32m+[0m[0m enable_dns64                                   = false
+      [32m+[0m[0m enable_resource_name_dns_a_record_on_launch    = false
+      [32m+[0m[0m enable_resource_name_dns_aaaa_record_on_launch = false
+      [32m+[0m[0m id                                             = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_association_id                 = (known after apply)
+      [32m+[0m[0m ipv6_native                                    = false
+      [32m+[0m[0m map_public_ip_on_launch                        = false
+      [32m+[0m[0m owner_id                                       = (known after apply)
+      [32m+[0m[0m private_dns_hostname_type_on_launch            = (known after apply)
+      [32m+[0m[0m tags                                           = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Web Subnet 3"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                                       = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 Web Subnet 3"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m vpc_id                                         = (known after apply)
+    }
+
+[1m  # aws_vpc.vpc[0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc" "vpc" {
+      [32m+[0m[0m arn                                  = (known after apply)
+      [32m+[0m[0m cidr_block                           = "10.1.0.0/16"
+      [32m+[0m[0m default_network_acl_id               = (known after apply)
+      [32m+[0m[0m default_route_table_id               = (known after apply)
+      [32m+[0m[0m default_security_group_id            = (known after apply)
+      [32m+[0m[0m dhcp_options_id                      = (known after apply)
+      [32m+[0m[0m enable_dns_hostnames                 = (known after apply)
+      [32m+[0m[0m enable_dns_support                   = true
+      [32m+[0m[0m enable_network_address_usage_metrics = (known after apply)
+      [32m+[0m[0m id                                   = (known after apply)
+      [32m+[0m[0m instance_tenancy                     = "default"
+      [32m+[0m[0m ipv6_association_id                  = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block                      = (known after apply)
+      [32m+[0m[0m ipv6_cidr_block_network_border_group = (known after apply)
+      [32m+[0m[0m main_route_table_id                  = (known after apply)
+      [32m+[0m[0m owner_id                             = (known after apply)
+      [32m+[0m[0m tags                                 = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 VPC"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+      [32m+[0m[0m tags_all                             = {
+          [32m+[0m[0m "CostCenter"  = "beazley"
+          [32m+[0m[0m "Environment" = "production"
+          [32m+[0m[0m "ManagedBy"   = "terraform"
+          [32m+[0m[0m "Name"        = "Beazley Task 1 VPC"
+          [32m+[0m[0m "Owner"       = "christopher.fernando"
+          [32m+[0m[0m "Project"     = "Task 1"
+        }
+    }
+
+[1m  # aws_vpc_security_group_egress_rule.allow_vpc_egress_rules["all"][0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc_security_group_egress_rule" "allow_vpc_egress_rules" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m cidr_ipv4              = "0.0.0.0/0"
+      [32m+[0m[0m description            = "Beazley Task 1 VPC Egress - Port -1"
+      [32m+[0m[0m from_port              = -1
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ip_protocol            = "-1"
+      [32m+[0m[0m security_group_id      = (known after apply)
+      [32m+[0m[0m security_group_rule_id = (known after apply)
+      [32m+[0m[0m tags_all               = {}
+      [32m+[0m[0m to_port                = -1
+    }
+
+[1m  # aws_vpc_security_group_ingress_rule.allow_vpc_ingress_rules["http-access"][0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc_security_group_ingress_rule" "allow_vpc_ingress_rules" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m cidr_ipv4              = "0.0.0.0/0"
+      [32m+[0m[0m description            = "Beazley Task 1 VPC Ingress - Port 80"
+      [32m+[0m[0m from_port              = 80
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ip_protocol            = "tcp"
+      [32m+[0m[0m security_group_id      = (known after apply)
+      [32m+[0m[0m security_group_rule_id = (known after apply)
+      [32m+[0m[0m tags_all               = {}
+      [32m+[0m[0m to_port                = 80
+    }
+
+[1m  # aws_vpc_security_group_ingress_rule.allow_vpc_ingress_rules["https-access"][0m will be created
+[0m  [32m+[0m[0m resource "aws_vpc_security_group_ingress_rule" "allow_vpc_ingress_rules" {
+      [32m+[0m[0m arn                    = (known after apply)
+      [32m+[0m[0m cidr_ipv4              = "0.0.0.0/0"
+      [32m+[0m[0m description            = "Beazley Task 1 VPC Ingress - Port 443"
+      [32m+[0m[0m from_port              = 443
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m ip_protocol            = "tcp"
+      [32m+[0m[0m security_group_id      = (known after apply)
+      [32m+[0m[0m security_group_rule_id = (known after apply)
+      [32m+[0m[0m tags_all               = {}
+      [32m+[0m[0m to_port                = 443
+    }
+
+[1mPlan:[0m 36 to add, 0 to change, 0 to destroy.
+[0m
+Changes to Outputs:
+  [32m+[0m[0m alb_dns_name = (known after apply)
+  [32m+[0m[0m igw          = {
+      [32m+[0m[0m arn      = (known after apply)
+      [32m+[0m[0m id       = (known after apply)
+      [32m+[0m[0m owner_id = (known after apply)
+      [32m+[0m[0m tags     = {
+          [32m+[0m[0m CostCenter  = "beazley"
+          [32m+[0m[0m Environment = "production"
+          [32m+[0m[0m ManagedBy   = "terraform"
+          [32m+[0m[0m Name        = "Beazley Task 1 Internet Gateway"
+          [32m+[0m[0m Owner       = "christopher.fernando"
+          [32m+[0m[0m Project     = "Task 1"
+        }
+      [32m+[0m[0m tags_all = {
+          [32m+[0m[0m CostCenter  = "beazley"
+          [32m+[0m[0m Environment = "production"
+          [32m+[0m[0m ManagedBy   = "terraform"
+          [32m+[0m[0m Name        = "Beazley Task 1 Internet Gateway"
+          [32m+[0m[0m Owner       = "christopher.fernando"
+          [32m+[0m[0m Project     = "Task 1"
+        }
+      [32m+[0m[0m timeouts = [90mnull[0m[0m
+      [32m+[0m[0m vpc_id   = (known after apply)
+    }
+[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Saved the plan to: tfplan
+
+To perform exactly these actions, run the following command to apply:
+    tofu apply "tfplan"
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                      ]7;file://redacted_hostname/Users/redacted_username/Documents/src/beazely-challenge/Task%2001[0m[27m[24m[J[30m[48;5;41m~/Documents/src/beazely-challenge/Task 01[49m[39m                                                                                                                                                                                           [32mbeazely-challenge:λ|main[00m_[34m[00m[31m[00m[33mS[00m
+[97mredacted_username@redacted_hostname[39m [97m[40m>[39m[49m[K[220C[30m[48;5;179m16:12[49m[39m[225D[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[1m[4m[97m[104mxit[0m[24m[39m[49m[1m[31me[24m[49m[1m[31mx[0m[39m[0m[32me[0m[32mx[39m[32me[32mx[0m[24m[49m[32mi[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[24m[49m[1m[31mt[0m[39m[0m[32me[0m[32mx[0m[32mi[0m[32mt[39m[?2004l
+
+Saving session...completed.
+
+Script done on Thu Jun 12 16:12:10 2025
