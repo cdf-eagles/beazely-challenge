@@ -1,7 +1,7 @@
-Script started on Thu Jun 12 16:11:58 2025
-Restored session: Thu Jun 12 16:11:51 CDT 2025
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                      ]7;file://redacted_hostname/Users/redacted_username/Documents/src/beazely-challenge/Task%2001[0m[27m[24m[J[30m[48;5;41m~/Documents/src/beazely-challenge/Task 01[49m[39m                                                                                                                                                                                           [32mbeazely-challenge:λ|main[00m_[34m[00m[31m[00m[33mS[00m
-[97mredacted_username@redacted_hostname[39m [97m[40m>[39m[49m[K[220C[30m[48;5;179m16:11[49m[39m[225D[?2004htofu plan -out=tfplan[21D[32mt[32mo[32mf[32mu[39m[17C[?2004l
+Script started on Sat Jun 14 14:41:29 2025
+Restored session: Sat Jun 14 14:41:06 CDT 2025
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                      ]7;file://redacted_hostname.redacted_tailnet.ts.net/Users/redacted_username/Documents/src/beazely-challenge/Task%2001[0m[27m[24m[J[30m[48;5;41m~/Documents/src/beazely-challenge/Task 01[49m[39m                                                                                                                                                                                           [32mbeazely-challenge:λ|main[00m_[34m[00m[31mU[00m[33m[00m
+[97mredacted_username@redacted_hostname[39m [97m[40m>[39m[49m[K[220C[30m[48;5;179m14:41[49m[39m[225D[?2004htofu plan -out=tfplan[21D[32mt[32mo[32mf[32mu[39m[17C[?2004l
 [0m[1mdata.aws_instances.target_web: Reading...[0m[0m
 [0m[1mdata.aws_instances.target_web: Read complete after 0s [id=us-east-2][0m
 
@@ -123,7 +123,7 @@ OpenTofu will perform the following actions:
 
 [1m  # aws_instance.webserver["0"][0m will be created
 [0m  [32m+[0m[0m resource "aws_instance" "webserver" {
-      [32m+[0m[0m ami                                  = "ami-0a39ac0843e40d0d7"
+      [32m+[0m[0m ami                                  = "ami-084a0886aa4c4c5a2"
       [32m+[0m[0m arn                                  = (known after apply)
       [32m+[0m[0m associate_public_ip_address          = (known after apply)
       [32m+[0m[0m availability_zone                    = (known after apply)
@@ -206,7 +206,7 @@ OpenTofu will perform the following actions:
 
 [1m  # aws_instance.webserver["1"][0m will be created
 [0m  [32m+[0m[0m resource "aws_instance" "webserver" {
-      [32m+[0m[0m ami                                  = "ami-0a39ac0843e40d0d7"
+      [32m+[0m[0m ami                                  = "ami-084a0886aa4c4c5a2"
       [32m+[0m[0m arn                                  = (known after apply)
       [32m+[0m[0m associate_public_ip_address          = (known after apply)
       [32m+[0m[0m availability_zone                    = (known after apply)
@@ -289,7 +289,7 @@ OpenTofu will perform the following actions:
 
 [1m  # aws_instance.webserver["2"][0m will be created
 [0m  [32m+[0m[0m resource "aws_instance" "webserver" {
-      [32m+[0m[0m ami                                  = "ami-0a39ac0843e40d0d7"
+      [32m+[0m[0m ami                                  = "ami-084a0886aa4c4c5a2"
       [32m+[0m[0m arn                                  = (known after apply)
       [32m+[0m[0m associate_public_ip_address          = (known after apply)
       [32m+[0m[0m availability_zone                    = (known after apply)
@@ -1231,9 +1231,9 @@ Saved the plan to: tfplan
 
 To perform exactly these actions, run the following command to apply:
     tofu apply "tfplan"
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                      ]7;file://redacted_hostname/Users/redacted_username/Documents/src/beazely-challenge/Task%2001[0m[27m[24m[J[30m[48;5;41m~/Documents/src/beazely-challenge/Task 01[49m[39m                                                                                                                                                                                           [32mbeazely-challenge:λ|main[00m_[34m[00m[31m[00m[33mS[00m
-[97mredacted_username@redacted_hostname[39m [97m[40m>[39m[49m[K[220C[30m[48;5;179m16:12[49m[39m[225D[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[1m[4m[97m[104mxit[0m[24m[39m[49m[1m[31me[24m[49m[1m[31mx[0m[39m[0m[32me[0m[32mx[39m[32me[32mx[0m[24m[49m[32mi[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[24m[49m[1m[31mt[0m[39m[0m[32me[0m[32mx[0m[32mi[0m[32mt[39m[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                      ]7;file://redacted_hostname.redacted_tailnet.ts.net/Users/redacted_username/Documents/src/beazely-challenge/Task%2001[0m[27m[24m[J[30m[48;5;41m~/Documents/src/beazely-challenge/Task 01[49m[39m                                                                                                                                                                                           [32mbeazely-challenge:λ|main[00m_[34m[00m[31mU[00m[33m[00m
+[97mredacted_username@redacted_hostname[39m [97m[40m>[39m[49m[K[220C[30m[48;5;179m14:41[49m[39m[225D[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[1m[4m[97m[104mxit[0m[24m[39m[49m[1m[31me[24m[49m[1m[31mx[0m[39m[0m[32me[0m[32mx[39m[32me[32mx[0m[24m[49m[32mi[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[24m[49m[1m[31mt[0m[39m[0m[32me[0m[32mx[0m[32mi[0m[32mt[39m[?2004l
 
 Saving session...completed.
 
-Script done on Thu Jun 12 16:12:10 2025
+Script done on Sat Jun 14 14:41:39 2025

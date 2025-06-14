@@ -21,11 +21,11 @@ variable "vpc_name" {
   default     = "Beazley Task 1"
 }
 
-# Default AMI to use
+# Default AMI to use (FreeBSD 14.3-RELEASE, us-east-2)
 variable "ami_default" {
   type        = string
   description = "Default AMI"
-  default     = "ami-0a39ac0843e40d0d7"
+  default     = "ami-084a0886aa4c4c5a2"
 }
 
 variable "instance_type" {
