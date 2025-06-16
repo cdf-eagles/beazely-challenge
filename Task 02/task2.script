@@ -1,0 +1,97 @@
+Script started on Mon Jun 16 01:55:44 2025
+[1m[7m%[27m[1m[m                                                                                                                                                                                                                                                      [m[27m[24m[J[38;5;0m[48;5;41m~/tmp[49m[39m   [48;5;13m[38;5;15m(task2)[39m[49m                                                                                                                                                                                                                    [38;5;28m#0#[39m
+[38;5;15mredacted_username@redacted_hostname[39m [38;5;15m[48;5;0m>[39m[49m[K[221C[38;5;0m[48;5;179m01:55[49m[39m[226D[?2004h./query_aws_metadata.py[23D[38;5;2m.[38;5;2m/[38;5;2mq[38;5;2mu[38;5;2me[38;5;2mr[38;5;2my[38;5;2m_[38;5;2ma[38;5;2mw[38;5;2ms[38;5;2m_[38;5;2mm[38;5;2me[38;5;2mt[38;5;2ma[38;5;2md[38;5;2ma[38;5;2mt[38;5;2ma[38;5;2m.[38;5;2mp[38;5;2my[39m[?2004l
+usage: query_aws_metadata.py [-h] {listkeys,getkey} ...
+
+query the meta data of an instance within AWS and provide a JSON formatted output
+
+positional arguments:
+  {listkeys,getkey}
+
+options:
+  -h, --help         show this help message and exit
+
+Task 2 of the Beazley Challenge
+[1m[7m%[27m[1m[m                                                                                                                                                                                                                                                      [m[27m[24m[J[38;5;0m[48;5;41m~/tmp[49m[39m   [48;5;13m[38;5;15m(task2)[39m[49m                                                                                                                                                                                                                    [38;5;28m#0#[39m
+[38;5;15mredacted_username@redacted_hostname[39m [38;5;15m[48;5;0m>[39m[49m[K[221C[38;5;0m[48;5;179m01:55[49m[39m[226D[?2004h./query_aws_metadata.py[23D[38;5;2m.[38;5;2m/[38;5;2mq[38;5;2mu[38;5;2me[38;5;2mr[38;5;2my[38;5;2m_[38;5;2ma[38;5;2mw[38;5;2ms[38;5;2m_[38;5;2mm[38;5;2me[38;5;2mt[38;5;2ma[38;5;2md[38;5;2ma[38;5;2mt[38;5;2ma[38;5;2m.[38;5;2mp[38;5;2my[39m[38;5;2my[38;5;2m [39m[38;5;2my[39m[39m -h[?2004l
+usage: query_aws_metadata.py [-h] {listkeys,getkey} ...
+
+query the meta data of an instance within AWS and provide a JSON formatted output
+
+positional arguments:
+  {listkeys,getkey}
+
+options:
+  -h, --help         show this help message and exit
+
+Task 2 of the Beazley Challenge
+[1m[7m%[27m[1m[m                                                                                                                                                                                                                                                      [m[27m[24m[J[38;5;0m[48;5;41m~/tmp[49m[39m   [48;5;13m[38;5;15m(task2)[39m[49m                                                                                                                                                                                                                    [38;5;28m#0#[39m
+[38;5;15mredacted_username@redacted_hostname[39m [38;5;15m[48;5;0m>[39m[49m[K[221C[38;5;0m[48;5;179m01:55[49m[39m[226D[?2004h./query_aws_metadata.py -h[26D[38;5;2m.[38;5;2m/[38;5;2mq[38;5;2mu[38;5;2me[38;5;2mr[38;5;2my[38;5;2m_[38;5;2ma[38;5;2mw[38;5;2ms[38;5;2m_[38;5;2mm[38;5;2me[38;5;2mt[38;5;2ma[38;5;2md[38;5;2ma[38;5;2mt[38;5;2ma[38;5;2m.[38;5;2mp[38;5;2my[39m[3C [1m[4m[38;5;15m[48;5;12mh[m[24m[39m[49m [m[24m[39m[49m [1m[4m[38;5;15m[48;5;12m-[m[24m[39m[49m[1m[4m[38;5;15m[48;5;12mh[m[24m[39m[49m[m[24m[39m[49ml[m[24m[39m[49m ist-keys[?2004l
+usage: query_aws_metadata.py [-h] {listkeys,getkey} ...
+query_aws_metadata.py: error: argument subcommand: invalid choice: 'list-keys' (choose from 'listkeys', 'getkey')
+[1m[7m%[27m[1m[m                                                                                                                                                                                                                                                      [m[27m[24m[J[38;5;0m[48;5;41m~/tmp[49m[39m   [48;5;13m[38;5;15m(task2)[39m[49m                                                                                                                                                                                                                    [38;5;28m#2#[39m
+[38;5;15mredacted_username@redacted_hostname[39m [38;5;226m[48;5;9m>[39m[49m[K[221C[38;5;0m[48;5;179m01:55[49m[39m[226D[?2004h./query_aws_metadata.py[23D[38;5;2m.[38;5;2m/[38;5;2mq[38;5;2mu[38;5;2me[38;5;2mr[38;5;2my[38;5;2m_[38;5;2ma[38;5;2mw[38;5;2ms[38;5;2m_[38;5;2mm[38;5;2me[38;5;2mt[38;5;2ma[38;5;2md[38;5;2ma[38;5;2mt[38;5;2ma[38;5;2m.[38;5;2mp[38;5;2my[39m[1m[4m[38;5;15m[48;5;12m list-keys[m[24m[39m[49m[10D[38;5;2my[m[24m[49m[38;5;2m [39m[38;5;2my[39m[39m [m[24m[39m[49ml[m[24m[39m[49mi[m[24m[39m[49ms[m[24m[39m[49mt[m[24m[39m[49mk[m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m eys[?2004l
+[
+    "ami-id",
+    "ami-launch-index",
+    "ami-manifest-path",
+    "block-device-mapping/",
+    "events/",
+    "hibernation/",
+    "hostname",
+    "identity-credentials/",
+    "instance-action",
+    "instance-id",
+    "instance-life-cycle",
+    "instance-type",
+    "local-hostname",
+    "local-ipv4",
+    "mac",
+    "metrics/",
+    "network/",
+    "placement/",
+    "product-codes",
+    "profile",
+    "public-hostname",
+    "public-ipv4",
+    "public-keys/",
+    "reservation-id",
+    "security-groups",
+    "services/",
+    "system"
+]
+[1m[7m%[27m[1m[m                                                                                                                                                                                                                                                      [m[27m[24m[J[38;5;0m[48;5;41m~/tmp[49m[39m   [48;5;13m[38;5;15m(task2)[39m[49m                                                                                                                                                                                                                    [38;5;28m#0#[39m
+[38;5;15mredacted_username@redacted_hostname[39m [38;5;15m[48;5;0m>[39m[49m[K[221C[38;5;0m[48;5;179m01:56[49m[39m[226D[?2004h./query_aws_metadata.py[23D[38;5;2m.[38;5;2m/[38;5;2mq[38;5;2mu[38;5;2me[38;5;2mr[38;5;2my[38;5;2m_[38;5;2ma[38;5;2mw[38;5;2ms[38;5;2m_[38;5;2mm[38;5;2me[38;5;2mt[38;5;2ma[38;5;2md[38;5;2ma[38;5;2mt[38;5;2ma[38;5;2m.[38;5;2mp[38;5;2my[39m[1m[4m[38;5;15m[48;5;12m listkeys[m[24m[39m[49m[9D[38;5;2my[m[24m[49m[38;5;2m [39m[38;5;2my[39m[39m [m[24m[39m[49me[m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m  [1m[4m[38;5;15m[48;5;12mlistkeys[m[24m[39m[49m[8D[m[24m[39m[49mg[m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m etkeys[?2004l
+usage: query_aws_metadata.py [-h] {listkeys,getkey} ...
+query_aws_metadata.py: error: argument subcommand: invalid choice: 'getkeys' (choose from 'listkeys', 'getkey')
+[1m[7m%[27m[1m[m                                                                                                                                                                                                                                                      [m[27m[24m[J[38;5;0m[48;5;41m~/tmp[49m[39m   [48;5;13m[38;5;15m(task2)[39m[49m                                                                                                                                                                                                                    [38;5;28m#2#[39m
+[38;5;15mredacted_username@redacted_hostname[39m [38;5;226m[48;5;9m>[39m[49m[K[221C[38;5;0m[48;5;179m01:56[49m[39m[226D[?2004h./query_aws_metadata.py getkeys[31D[38;5;2m.[38;5;2m/[38;5;2mq[38;5;2mu[38;5;2me[38;5;2mr[38;5;2my[38;5;2m_[38;5;2ma[38;5;2mw[38;5;2ms[38;5;2m_[38;5;2mm[38;5;2me[38;5;2mt[38;5;2ma[38;5;2md[38;5;2ma[38;5;2mt[38;5;2ma[38;5;2m.[38;5;2mp[38;5;2my[39m[8C  [1m[4m[38;5;15m[48;5;12ms[m[24m[39m[49m[m[24m[39m[49m [?2004l
+{
+    "ami-id": "ami-0abcc07f0bf9b612b",
+    "ami-launch-index": "0",
+    "ami-manifest-path": "(unknown)",
+    "hostname": "ip-XXX-XXX-XXX-XXX.ec2.internal",
+    "instance-action": "none",
+    "instance-id": "i-XXXXXXXXXXXXXXXXX",
+    "instance-life-cycle": "on-demand",
+    "instance-type": "t3.medium",
+    "local-hostname": "ip-XXX-XXX-XXX-XXX.ec2.internal",
+    "local-ipv4": "XXX.XXX.XXX.XXX",
+    "mac": "XX:XX:XX:XX:XX:XX",
+    "product-codes": "XXXXXXXXXXXXXXXXXXXXXXXXX",
+    "profile": "default-hvm",
+    "public-hostname": "ec2-XXX-XXX-XXX-XXX.compute-1.amazonaws.com",
+    "public-ipv4": "XXX.XXX.XXX.XXX",
+    "reservation-id": "r-XXXXXXXXXXXXXXXXX",
+    "security-groups": "XXXXXXXXXXXXXXXXXXX",
+    "system": "nitro"
+}
+[1m[7m%[27m[1m[m                                                                                                                                                                                                                                                      [m[27m[24m[J[38;5;0m[48;5;41m~/tmp[49m[39m   [48;5;13m[38;5;15m(task2)[39m[49m                                                                                                                                                                                                                    [38;5;28m#0#[39m
+[38;5;15mredacted_username@redacted_hostname[39m [38;5;15m[48;5;0m>[39m[49m[K[221C[38;5;0m[48;5;179m01:56[49m[39m[226D[?2004h./query_aws_metadata.py getkey[30D[38;5;2m.[38;5;2m/[38;5;2mq[38;5;2mu[38;5;2me[38;5;2mr[38;5;2my[38;5;2m_[38;5;2ma[38;5;2mw[38;5;2ms[38;5;2m_[38;5;2mm[38;5;2me[38;5;2mt[38;5;2ma[38;5;2md[38;5;2ma[38;5;2mt[38;5;2ma[38;5;2m.[38;5;2mp[38;5;2my[39m[7C -k instance-type[?2004l
+{
+    "instance-type": "t3.medium"
+}
+[1m[7m%[27m[1m[m                                                                                                                                                                                                                                                      [m[27m[24m[J[38;5;0m[48;5;41m~/tmp[49m[39m   [48;5;13m[38;5;15m(task2)[39m[49m                                                                                                                                                                                                                    [38;5;28m#0#[39m
+[38;5;15mredacted_username@redacted_hostname[39m [38;5;15m[48;5;0m>[39m[49m[K[221C[38;5;0m[48;5;179m01:56[49m[39m[226D[?2004he[1m[38;5;1me[m[39m[1m[38;5;1me[m[39m[1m[4m[38;5;15m[48;5;12mxport TOKEN=$(curl -s -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")[m[24m[39m[49m[120D[1m[38;5;1me[24m[49m[1m[38;5;1mx[m[39m[m[38;5;2me[m[38;5;2mx[39m[38;5;2me[38;5;2mx[m[24m[49m[38;5;2mi[39m[m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [m[24m[39m[49m [118D[1m[38;5;1me[1m[38;5;1mx[1m[38;5;1mi[m[39m[1m[4m[38;5;15m[48;5;12mt[m[24m[39m[49m[1m[38;5;1mi[24m[49m[1m[38;5;1mt[m[39m[m[38;5;2me[m[38;5;2mx[m[38;5;2mi[m[38;5;2mt[39m[?2004l
+
+Script done on Mon Jun 16 01:56:42 2025
