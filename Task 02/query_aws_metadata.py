@@ -14,8 +14,6 @@ parser = argparse.ArgumentParser(
         epilog='Task 2 of the Beazley Challenge'
 )
 subparsers = parser.add_subparsers(dest="subcommand")
-#parser.add_argument("-k", "--metadata-key", help = "AWS EC2 Metadata Key")
-#parser.add_argument("-l", "--list-keys", action='store_const', help = "Available AWS EC2 Metadata Keys")
 
 # Subcommand functions taken from https://gist.github.com/mivade/384c2c41c3a29c637cb6c603d4197f9f
 def argument(*name_or_flags, **kwargs):
